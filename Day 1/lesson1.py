@@ -24,10 +24,9 @@ print(name + ' ' + surname)
 #სტრინგი არისბრჭყალლებშ მოქცეული სიმბოლოები
 #print(name + age)
 
-#print(type(age))
-#print(type(name))
-#print(type(surname))
-#print(type(heigh))
-#print(type(knows_programing))
+print(age)
+print(name)
+print(surname)
+print(heigh)
 
 print(name + " " + str(age))
