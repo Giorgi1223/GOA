@@ -12,12 +12,14 @@
 
 #5) while ციკლის მეშვეობით ნულიდან ხუთის ჩათვლით შეკრიბეთ ციფრები
 
-#sum=0
-#for i in range(6):
-    #sum = sum + i
+#num = 0
+#num1 = 0
 
+#while num <= 5:
+    #num1 += num
+    #num += 1
 
-#print(sum)
+#print(num1)
 
 
 #6) for ციკლში გამოიყენეთ რაიმე string და გატესტეთ როგორ მუშაობს იგი
