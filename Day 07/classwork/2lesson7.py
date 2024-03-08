@@ -1,10 +1,3 @@
-#1
-
-for i in range(1,10):
-    print(i)
-
-
-
 #2 
 
 sum = 0
