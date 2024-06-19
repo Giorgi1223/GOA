@@ -1,0 +1,16 @@
+p {
+    width: 300px;
+    height: 30px;
+    border: 5px solid red;
+    padding: 20px 40px 30px 10px;
+    margin: 40px 20px;
+}
+
+
+
+/*Total width = 300 + 10 + 40 + 5 + 5 = 360px
+width is 360px
+
+
+/*Total height = 30 + 20 + 30 + 5 + 5 = 90px
+heigh is 90px
