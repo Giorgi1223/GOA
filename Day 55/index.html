@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+        <p id="counter">0</p>
+        <div class="buttons">
+            <button onclick="changeCounter(1)">+1</button>
+            <button onclick="resetCounter()">Reset</button>
+            <button onclick="changeCounter(-1)">-1</button>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        const counterElement = document.getElementById('counter');
+
+        function updateCounter() {
+            counterElement.textContent = count;
+        }
+
+        function changeCounter(amount) {
+            count += amount;
+            updateCounter();
+        }
+
+        function resetCounter() {
+            count = 0;
+            updateCounter();
+        }
+    </script>
+</body>
+</html>

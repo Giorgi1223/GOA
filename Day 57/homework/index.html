@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+<body>
+    <p id="toggle-paragraph">Click or tap here to toggle the photo visibility.</p>
+    <img id="photo" src="maltipu.png" alt="Descriptive Alt Text">
+
+    <script>
+        const paragraph = document.getElementById('toggle-paragraph');
+        const photo = document.getElementById('photo');
+        
+        paragraph.addEventListener('click', function() {
+            if (photo.style.display === 'none') {
+                photo.style.display = 'block'; // Show photo
+            } else {
+                photo.style.display = 'none';  // Hide photo
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+main{
+    display: grid;
+    width: 2000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.image-div {
+    width: 100%;
+    height: 500px
+;
+
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    box-shadow: -5px 5px 20px rgb(119, 114, 114);
+}
+
+.child {
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.child h1 {
+    font-size: 80px;
+}
+
+.child p {
+    font-size: 32px;
+}
+
+/* Rabati */
+
+
+.ge {
+   background-image: url('./imgs/timur-kozmenko-8_UcUY4lTck-unsplash.jpg');
+} 
+
+
+.ge .child{
+    background-color: rgba(54, 145, 186, 0.6);
+}
+
+
+/* New York */
+
+.usa {
+    background-image: url('./imgs/michael-discenza-5omwAMDxmkU-unsplash.jpg');
+}
+
+.usa .child{
+    background-color: rgba(175, 141, 111, 0.6);
+}
+
+.pr {
+    background-image: url('./imgs/earth-DXuxHw3S5ak-unsplash.jpg');
+}
+
+.pr .child{
+    background-color: rgba(175, 141, 111, 0.6);
+}
+
+.db {
+    background-position: bottom;
+    background-image: url('./imgs/ryan-miglinczy-02n9_v-d1yY-unsplash.jpg');
+}
+
+
+.db .child{
+    background-color: rgba(175, 141, 111, 0.6);
+}
+
+
+.br{
+    background-image: url('./imgs/raphael-nogueira-OkiDIla7K8Q-unsplash.jpg');
+}
+
+.br .child {
+    background-color: rgba(83, 194, 246, 0.6);
+}
+
+
+.ar{
+    background-image: url('./imgs/nestor-barbitta-QhQ4WgX77G0-unsplash.jpg');
+}
+
+.ar .child{
+    background-color: rgba(83, 194, 246, 0.6);;
+}
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="in.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <button onclick="displayInfo()">Submit</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function displayInfo() {
+            // Get input values
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const age = document.getElementById('age').value;
+
+            // Format the message
+            const message = `Your name is ${firstName}. Your surname is ${lastName}. Your age is ${age}.`;
+
+            // Display the message
+            document.getElementById('output').textContent = message;
+        }
+    </script>
+</body>
+</html>

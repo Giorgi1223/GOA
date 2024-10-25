@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="registration-form">
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button type="submit">Submit</button>
+        <p id="error-message" class="error-message"></p>
+    </form>
+
+    <script>
+
+        const form = document.getElementById('registration-form');
+        const fullName = document.getElementById('full-name');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const errorMessage = document.getElementById('error-message');
+
+
+        function validateForm(event) {
+
+            event.preventDefault();
+
+
+            const fullNameValue = fullName.value.trim();
+            const emailValue = email.value.trim();
+            const passwordValue = password.value.trim();
+
+            // Check if any field is empty
+            if (fullNameValue === '' || emailValue === '' || passwordValue === '') {
+
+                errorMessage.textContent = 'Please fill out all fields.';
+            } else {
+            
+                errorMessage.textContent = '';
+                console.log('Full Name:', fullNameValue);
+                console.log('Email:', emailValue);
+                console.log('Password:', passwordValue);
+                
+            }
+        }
+
+
+        form.addEventListener('submit', validateForm);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.loader {
+    text-align: center;
+}
+
+.rainbow-text {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(270deg, #FF5733, #FFBD33, #DBFF33, #33FF57, #33FFBD, #3357FF, #A833FF, #FF33A1);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
