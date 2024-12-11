@@ -12,4 +12,3 @@ def smaller(arr):
         result.append(count)
     
     return result
-print(result)
