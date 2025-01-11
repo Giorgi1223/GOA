@@ -11,7 +11,7 @@ class User {
 }
 
 // ახალი მომხმარებლის შექმნა
-const currentUser = new User('giorgi', 'giorgi@example.com');
+const currentUser = new User('giorgi', 'gggiorgi35@gmail.com');
 
 // პროფილის მონაცემების გამოჩენა
 document.getElementById('username').textContent = `სახელი: ${currentUser.username}`;

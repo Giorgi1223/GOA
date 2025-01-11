@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #counterValue {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>გამოცნობის თამაში</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="appContainer">
+    <h1>გამოცნობის თამაში</h1>
+
+    <div id="initialScreen">
+      <label for="userName">შეიყვანეთ სახელი:</label>
+      <input type="text" id="userName" placeholder="თქვენი სახელი">
+      <button id="startButton">დაიწყე</button>
+    </div>
+
+    <div id="gameScreen" style="display:none;">
+      <h2>მომხმარებელი: <span id="userDisplayName"></span></h2>
+      <p>ქულა: <span id="userScore">0</span></p>
+      <p>სირთულის დონე: <span id="difficultyLevel">1</span></p>
+      
+      <label for="colorPicker">აირჩიეთ ფერი:</label>
+      <input type="color" id="colorPicker">
+      
+      <p>გამოცანაში შეიყვანეთ რიცხვი:</p>
+      <input type="number" id="guessNumber" placeholder="შეიტანეთ რიცხვი">
+      <button id="checkAnswerButton">შეამოწმე პასუხი</button>
+      
+      <p id="difficultyMessage">თქვენი პირველი გამოცნობა: 1-2</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
