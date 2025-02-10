@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Shop</title>
+  <style>
+    /* Basic styles for the layout */
+    .item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    .item-image {
+      width: 100%;
+      height: auto;
+    }
+    .item-name {
+      font-size: 1.2em;
+    }
+    .item-price {
+      color: green;
+      font-weight: bold;
+    }
+    .add-to-cart {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Online Shop</h1>
+  <div id="item-container"></div>
+
+  <!-- Import script.js after the items are defined -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
