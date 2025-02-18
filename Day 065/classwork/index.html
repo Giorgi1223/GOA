@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პარაგრაფის შეცვლა</title>
+    <style>
+        p:hover {
+            color: red;
+            content: "ახალი ტექსტი"; 
+        }
+        p:hover::after {
+            content: " (ახალი ტექსტი)";
+        }
+    </style>
+</head>
+<body>
+
+    <p>ეს არის საწყისი ტექსტი</p>
+
+</body>
+</html>
