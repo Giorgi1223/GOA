@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ხუმრობების გენერატორი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #joke {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ხუმრობების გენერატორი</h1>
+  <button onclick="getJoke()">მითხარი ხუმრობა</button>
+
+  <div id="joke"></div>
+
+  <script>
+    async function getJoke() {
+      const jokeDiv = document.getElementById('joke');
+      jokeDiv.innerHTML = 'იტვირთება...';
+
+      try {
+        const response = await fetch('https://v2.jokeapi.dev/joke/Any?type=twopart&safe-mode');
+        const data = await response.json();
+
+        if (data.type === 'twopart') {
+          jokeDiv.innerHTML = data.setup;
+
+          // 1 წამში გამოვაჩინოთ punchline
+          setTimeout(() => {
+            jokeDiv.innerHTML += `<br><strong>${data.delivery}</strong>`;
+          }, 1000);
+        } else {
+          jokeDiv.innerHTML = 'ვერ მოიძებნა ხუმრობა :(';
+        }
+      } catch (error) {
+        jokeDiv.innerHTML = 'დაფიქსირდა შეცდომა :(';
+        console.error(error);
+      }
+    }
+  </script>
+
+</body>
+</html>

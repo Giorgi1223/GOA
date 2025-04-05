@@ -11,7 +11,6 @@ print(manual_rstrip("  hello  "))
 print(manual_rstrip("test!!!", "!"))
 
 
-#Lstrip
 
 
 def manual_lstrip(s, chars=" "):
@@ -20,6 +19,6 @@ def manual_lstrip(s, chars=" "):
         i += 1
     return s[i:]
 
-# გამოყენება:
-print(manual_lstrip("  hello  "))  # "hello  "
-print(manual_lstrip("###test###", "#"))  # "test###"
+
+print(manual_lstrip("  hello  "))
+print(manual_lstrip("###test###", "#"))
